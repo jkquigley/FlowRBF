@@ -1,8 +1,8 @@
 class FlowRbfWorkbench (Workbench):
 
     MenuText = "FlowRBF"
-    ToolTip = "A description of my workbench"
-    Icon = """paste here the contents of a 16x16 xpm icon"""
+    ToolTip = "CFD with Radial Basis Functions"
+    Icon = """A 3-D Sinusoidal Wave"""
 
     def Initialize(self):
         """This function is executed when the workbench is first activated.
