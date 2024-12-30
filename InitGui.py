@@ -1,8 +1,13 @@
+import os
+
+
 class FlowRbfWorkbench (Workbench):
+    from FlowRbfWorkbench import FlowRbfTools
+
 
     MenuText = "FlowRBF"
     ToolTip = "CFD with Radial Basis Functions"
-    Icon = """A 3-D Sinusoidal Wave"""
+    Icon = os.path.join(FlowRbfTools.getModulePath(), 'gui', 'icons', 'flowrbf.svg')
 
     def Initialize(self):
         """This function is executed when the workbench is first activated.
