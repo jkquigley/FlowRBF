@@ -2,7 +2,7 @@ from region import Region
 from FlowRbf.functions.radial_basis_function import RadialBasisFunction 
 
 
-class Interior(Region):
+class VelocityOutlet(Region):
     def __init__(self):
         pass
 

@@ -1,8 +1,8 @@
 from region import Region
 from FlowRbf.functions.radial_basis_function import RadialBasisFunction 
+    
 
-
-class Interior(Region):
+class PressureInlet(Region):
     def __init__(self):
         pass
 
@@ -11,3 +11,4 @@ class Interior(Region):
             raise NotImplementedError()  # TODO: Implement this
         
         return func
+    

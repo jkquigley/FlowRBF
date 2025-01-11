@@ -1,13 +1,6 @@
 import numpy as np
 from numpy.polynomial import Polynomial
-
-
-class RadialBasisFunction:
-    def __init__(self):
-        pass
-
-    def __call__(self, x, y, epsilon=1.0, m=0):
-        raise NotImplementedError
+from radial_basis_function import RadialBasisFunction
 
 
 class PolyharmonicSpline(RadialBasisFunction):

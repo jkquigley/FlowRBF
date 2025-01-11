@@ -1,7 +1,7 @@
 import numpy as np
 import scipy.sparse as sp
 import open3d as o3d
-from radial_basis_function import RadialBasisFunction
+from functions.radial_basis_function import RadialBasisFunction
 
 
 class Solver:
@@ -21,7 +21,7 @@ class Solver:
         self.n = self.centres.points.shape[0]
         self.kd_tree = o3d.t.geometry.KDTreeFlann(centres)
     
-    def solve(self, operators, rhs):
+    def solve(self):
         mat = sp.lil_matrix((self.n, self.n))
         b = np.zeros(self.n)
         for i in range(self.n):
