@@ -1,6 +1,9 @@
-from polyharmonic_spline import PolyharmonicSpline
+from .radial_basis_function import RadialBasisFunction
+
+from .polyharmonic_spline import PolyharmonicSpline
 
 
 __all__ = [
-    'PolyharmonicSpline',
-    ]
+    "RadialBasisFunction",
+    "PolyharmonicSpline"
+]

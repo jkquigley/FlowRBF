@@ -1,5 +1,5 @@
-from region import Region
-from FlowRbf.functions.radial_basis_function import RadialBasisFunction 
+from .region import Region
+from ..functions.radial_basis_function import RadialBasisFunction 
     
 
 class PressureOutlet(Region):
